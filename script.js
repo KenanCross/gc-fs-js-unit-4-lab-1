@@ -5,6 +5,7 @@ function main() {
 	const shrink = document.getElementById("shrink-me");
 	const lists = document.querySelectorAll("li");
 	const link = document.querySelector(".link");
+	const input = document.getElementById("name");
 
 	grow.classList.add("big");
 	shrink.classList.remove("big");
@@ -16,4 +17,5 @@ function main() {
 
 	hide.style.display = "none";
 	show.style.display = "block";
+	document.querySelector("h1").textContent = "Hello there " + input.value + "!";
 }
