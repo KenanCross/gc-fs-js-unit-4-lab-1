@@ -9,7 +9,7 @@ function main() {
 
 	grow.classList.add("big");
 	shrink.classList.remove("big");
-	lists.forEach(function (element) {
+	lists.forEach((element) => {
 		console.log(element.textContent);
 	});
 	link.href = "https://www.example.com";
